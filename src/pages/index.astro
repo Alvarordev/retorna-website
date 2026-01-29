@@ -1,18 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Logo from "../assets/logo-editado.png";
+import AnimatedText from "../components/AnimatedText.astro";
+import AnimatedImage from "../components/AnimatedImage.astro";
 import {
-  Hamburger,
   MailIcon,
   MapPin,
   PhoneCallIcon,
   Shield,
   TrendingUp,
-  User,
   ArrowDown,
-  Briefcase,
   CheckCircle,
-  ArrowRight,
   Building2,
   Hammer,
   Leaf,
@@ -21,6 +19,7 @@ import {
   Send,
   Linkedin,
   Twitter,
+  Menu,
 } from "@lucide/astro";
 import Mech from "../assets/mech_30anos-n2.png";
 import Cora from "../assets/logo_color.png";
@@ -80,7 +79,7 @@ import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
         <!-- Mobile menu button -->
         <div class="md:hidden flex items-center">
           <button class="text-slate-900 hover:text-red-800 focus:outline-none">
-            <Hamburger width="24" stroke-width="1.5" />
+            <Menu width="24" stroke-width="1.5" />
           </button>
         </div>
       </div>
@@ -103,20 +102,22 @@ import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
 
     <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full pt-20">
       <div class="max-w-3xl">
-        <h1
+        <AnimatedText
+          as="h1"
           class="text-4xl md:text-6xl lg:text-7xl text-white font-semibold leading-[1.1] tracking-tight mb-8"
         >
           Estructuración jurídica para <span
             class="text-transparent bg-clip-text bg-linear-to-r from-red-400 to-red-600 italic font-serif pr-2"
             >inversiones</span
           > de alto impacto.
-        </h1>
-        <p
-          class="text-lg md:text-xl text-slate-300 font-light max-w-2xl leading-relaxed mb-10"
+        </AnimatedText>
+        <AnimatedText
+          as="p"
+          class="text-lg md:text-xl text-slate-300 font-normal max-w-2xl leading-relaxed mb-10"
         >
           Asesoría legal especializada para empresas. Dotamos a cada proyecto de
           una estructura clara, previsible y ejecutable.
-        </p>
+        </AnimatedText>
         <div class="flex flex-col sm:flex-row gap-4">
           <a
             href="#contact"
@@ -147,21 +148,22 @@ import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
     <div class="max-w-7xl mx-auto px-6 lg:px-12">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
         <div>
-          <h2
+          <AnimatedText
+            as="h2"
             class="text-3xl md:text-4xl lg:text-5xl font-semibold text-slate-900 mb-8 tracking-tight leading-tight"
           >
             Ordenamos jurídicamente la inversión y reducimos riesgos normativos.
-          </h2>
+          </AnimatedText>
           <div class="w-16 h-0.5 bg-red-700 mb-8"></div>
         </div>
         <div class="space-y-8">
-          <p class="text-lg text-slate-600 font-light leading-relaxed">
-            En <span class="font-semibold text-slate-900">Retorna</span>,
+          <p class="text-lg text-slate-600 font-normal leading-relaxed">
+            En <span class="font-semibold text-red-700">Retorna</span>,
             brindamos asesoría legal especializada a empresas e inversionistas
             en la estructuración jurídica de proyectos de inversión pública y
             privada.
           </p>
-          <p class="text-base text-slate-600 font-light leading-relaxed">
+          <p class="text-base text-slate-600 font-normal leading-relaxed">
             Nuestra intervención se orienta a dotar a cada proyecto u operación
             de una estructura clara, alineada con los objetivos económicos del
             inversionista y con las exigencias del entorno institucional
@@ -177,7 +179,7 @@ import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
                 <h4 class="font-sans font-semibold text-slate-900 text-sm mb-1">
                   Reducción de Riesgos
                 </h4>
-                <p class="text-sm text-slate-500 font-light">
+                <p class="text-sm text-slate-500 font-normal">
                   Normativos y contractuales.
                 </p>
               </div>
@@ -190,7 +192,7 @@ import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
                 <h4 class="font-sans font-semibold text-slate-900 text-sm mb-1">
                   Previsibilidad
                 </h4>
-                <p class="text-sm text-slate-500 font-light">
+                <p class="text-sm text-slate-500 font-normal">
                   Estructuras ejecutables.
                 </p>
               </div>
@@ -212,12 +214,13 @@ import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
           class="text-red-700 font-semibold tracking-widest text-xs uppercase mb-2 block"
           >Áreas de Práctica</span
         >
-        <h2
+        <AnimatedText
+          as="h2"
           class="text-3xl md:text-4xl text-slate-900 font-semibold tracking-tight mb-6"
         >
           Nuestros Servicios
-        </h2>
-        <p class="text-slate-600 font-light max-w-2xl">
+        </AnimatedText>
+        <p class="text-slate-600 font-normal max-w-2xl">
           Soluciones legales integrales diseñadas para dar soporte, seguridad y
           viabilidad a operaciones comerciales y proyectos de inversión.
         </p>
@@ -230,19 +233,23 @@ import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
         >
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
             <div class="p-8 md:px-12 md:py-2 flex flex-col justify-center">
-              <h3
+              <AnimatedText
+                as="h3"
                 class="text-2xl md:text-3xl font-serif text-slate-900 mb-4 leading-tight"
               >
                 Asesoría Legal Estratégica y Representación Corporativa
-              </h3>
-              <p class="text-slate-600 font-light leading-relaxed mb-6">
+              </AnimatedText>
+              <AnimatedText
+                as="p"
+                class="text-slate-600 font-normal leading-relaxed mb-6"
+              >
                 Acompañamiento legal continuo para empresas. Actuamos como
                 equipo legal externo integrado al negocio, participando en
                 decisiones comerciales y corporativas con visión preventiva.
-              </p>
+              </AnimatedText>
               <ul class="space-y-2">
                 <li
-                  class="flex items-start gap-3 text-sm text-slate-700 font-light"
+                  class="flex items-start gap-3 text-sm text-slate-700 font-normal"
                 >
                   <CheckCircle
                     width="18"
@@ -252,7 +259,7 @@ import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
                   <span>Asesoría corporativa y contractual</span>
                 </li>
                 <li
-                  class="flex items-start gap-3 text-sm text-slate-700 font-light"
+                  class="flex items-start gap-3 text-sm text-slate-700 font-normal"
                 >
                   <CheckCircle
                     width="18"
@@ -262,7 +269,7 @@ import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
                   <span>Gestión preventiva de riesgos</span>
                 </li>
                 <li
-                  class="flex items-start gap-3 text-sm text-slate-700 font-light"
+                  class="flex items-start gap-3 text-sm text-slate-700 font-normal"
                 >
                   <CheckCircle
                     width="18"
@@ -273,13 +280,12 @@ import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
                 </li>
               </ul>
             </div>
-            <div class="h-64 lg:h-full">
-              <img
-                src={LegalAdvisory.src}
-                alt="Asesoría Legal"
-                class="w-full h-full object-cover"
-              />
-            </div>
+            <AnimatedImage
+              src={LegalAdvisory.src}
+              alt="Asesoría Legal"
+              class="h-64 lg:h-full"
+              imageClass="object-cover"
+            />
           </div>
         </div>
 
@@ -288,34 +294,32 @@ import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
           class="group bg-white border border-slate-200 hover:border-red-200 transition-colors duration-300 overflow-hidden"
         >
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
-            <div class="h-64 lg:h-full order-2 lg:order-1">
-              <img
-                src={PublicProcurement.src}
-                alt="Contrataciones Públicas"
-                class="w-full h-full object-cover"
-              />
-            </div>
+            <AnimatedImage
+              src={PublicProcurement.src}
+              alt="Contrataciones Públicas"
+              class="h-64 lg:h-full order-2 lg:order-1"
+              imageClass="object-cover"
+            />
             <div
               class="p-8 md:p-12 flex flex-col justify-center order-1 lg:order-2"
             >
-              <div
-                class="w-12 h-12 flex items-center justify-center bg-slate-50 text-red-800 mb-6 rounded-sm"
-              >
-                <Building2 width="28" stroke-width="1.5" />
-              </div>
-              <h3
+              <AnimatedText
+                as="h3"
                 class="text-2xl md:text-3xl font-serif text-slate-900 mb-4 leading-tight"
               >
                 Contrataciones Públicas y Ejecución Contractual
-              </h3>
-              <p class="text-slate-600 font-light leading-relaxed mb-6">
+              </AnimatedText>
+              <AnimatedText
+                as="p"
+                class="text-slate-600 font-normal leading-relaxed mb-6"
+              >
                 Especializados en contratación pública bajo la Ley N.° 32069.
                 Acompañamos durante todo el ciclo de contratación con enfoque
                 preventivo y estratégico.
-              </p>
+              </AnimatedText>
               <ul class="space-y-2">
                 <li
-                  class="flex items-start gap-3 text-sm text-slate-700 font-light"
+                  class="flex items-start gap-3 text-sm text-slate-700 font-normal"
                 >
                   <CheckCircle
                     width="18"
@@ -325,7 +329,7 @@ import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
                   <span>Participación en procedimientos de selección</span>
                 </li>
                 <li
-                  class="flex items-start gap-3 text-sm text-slate-700 font-light"
+                  class="flex items-start gap-3 text-sm text-slate-700 font-normal"
                 >
                   <CheckCircle
                     width="18"
@@ -335,7 +339,7 @@ import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
                   <span>Protección contractual durante ejecución</span>
                 </li>
                 <li
-                  class="flex items-start gap-3 text-sm text-slate-700 font-light"
+                  class="flex items-start gap-3 text-sm text-slate-700 font-normal"
                 >
                   <CheckCircle
                     width="18"
@@ -355,27 +359,26 @@ import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
         >
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
             <div class="p-8 md:p-12 flex flex-col justify-center">
-              <div
-                class="w-12 h-12 flex items-center justify-center bg-slate-50 text-red-800 mb-6 rounded-sm"
-              >
-                <Building2 width="28" stroke-width="1.5" />
-              </div>
-              <h3
+              <AnimatedText
+                as="h3"
                 class="text-2xl md:text-3xl font-serif text-slate-900 mb-4 leading-tight"
               >
                 Estructuración de Inversión Pública y Obras por Impuestos
-              </h3>
-              <p class="text-slate-600 font-light leading-relaxed mb-6">
+              </AnimatedText>
+              <AnimatedText
+                as="p"
+                class="text-slate-600 font-normal leading-relaxed mb-6"
+              >
                 Asesoría en estructuración legal de proyectos de inversión, con
                 énfasis en Obras por Impuestos (OxI). Acompañamos desde la
                 concepción hasta la ejecución.
-              </p>
+              </AnimatedText>
               <div class="grid grid-cols-3 gap-4">
                 <div class="text-sm">
                   <span class="block text-red-800 font-semibold mb-1"
                     >Impacto</span
                   >
-                  <span class="text-slate-600 font-light text-xs"
+                  <span class="text-slate-600 font-normal text-xs"
                     >Inversión privada a proyectos públicos</span
                   >
                 </div>
@@ -383,7 +386,7 @@ import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
                   <span class="block text-red-800 font-semibold mb-1"
                     >Claridad</span
                   >
-                  <span class="text-slate-600 font-light text-xs"
+                  <span class="text-slate-600 font-normal text-xs"
                     >Reglas previsibles</span
                   >
                 </div>
@@ -391,19 +394,18 @@ import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
                   <span class="block text-red-800 font-semibold mb-1"
                     >Seguridad</span
                   >
-                  <span class="text-slate-600 font-light text-xs"
+                  <span class="text-slate-600 font-normal text-xs"
                     >Gestión de riesgos</span
                   >
                 </div>
               </div>
             </div>
-            <div class="h-64 lg:h-full">
-              <img
-                src={InvestmentStructuring.src}
-                alt="Estructuración de Inversión"
-                class="w-full h-full object-cover"
-              />
-            </div>
+            <AnimatedImage
+              src={InvestmentStructuring.src}
+              alt="Estructuración de Inversión"
+              class="h-64 lg:h-full"
+              imageClass="object-cover"
+            />
           </div>
         </div>
 
@@ -412,31 +414,29 @@ import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
           class="group bg-white border border-slate-200 hover:border-red-200 transition-colors duration-300 overflow-hidden"
         >
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
-            <div class="h-64 lg:h-full order-2 lg:order-1">
-              <img
-                src={DisputeResolution.src}
-                alt="Resolución de Controversias"
-                class="w-full h-full object-cover"
-              />
-            </div>
+            <AnimatedImage
+              src={DisputeResolution.src}
+              alt="Resolución de Controversias"
+              class="h-64 lg:h-full order-2 lg:order-1"
+              imageClass="object-cover"
+            />
             <div
               class="p-8 md:p-12 flex flex-col justify-center order-1 lg:order-2"
             >
-              <div
-                class="w-12 h-12 flex items-center justify-center bg-slate-50 text-red-800 mb-6 rounded-sm"
-              >
-                <Hammer width="28" stroke-width="1.5" />
-              </div>
-              <h3
+              <AnimatedText
+                as="h3"
                 class="text-2xl md:text-3xl font-serif text-slate-900 mb-4 leading-tight"
               >
                 Arbitrajes y Resolución de Controversias
-              </h3>
-              <p class="text-slate-600 font-light leading-relaxed mb-6">
+              </AnimatedText>
+              <AnimatedText
+                as="p"
+                class="text-slate-600 font-normal leading-relaxed mb-6"
+              >
                 Especialistas en resolución de controversias y arbitrajes con el
                 Estado. Abordamos cada caso con visión jurídica, técnica y
                 económica.
-              </p>
+              </AnimatedText>
               <div class="flex flex-wrap gap-2">
                 <span
                   class="px-3 py-1 bg-slate-100 text-slate-600 text-xs rounded-full"
@@ -465,24 +465,23 @@ import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
         >
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
             <div class="p-8 md:p-12 flex flex-col justify-center">
-              <div
-                class="w-12 h-12 flex items-center justify-center bg-slate-50 text-red-800 mb-6 rounded-sm"
-              >
-                <Leaf width="28" stroke-width="1.5" />
-              </div>
-              <h3
+              <AnimatedText
+                as="h3"
                 class="text-2xl md:text-3xl font-serif text-slate-900 mb-4 leading-tight"
               >
                 Estructuración de Negocios Agroexportadores
-              </h3>
-              <p class="text-slate-600 font-light leading-relaxed mb-6">
+              </AnimatedText>
+              <AnimatedText
+                as="p"
+                class="text-slate-600 font-normal leading-relaxed mb-6"
+              >
                 Asesoría legal especializada en negocios de café y cacao en La
                 Convención – Cusco. Apoyamos a empresas peruanas e
                 inversionistas extranjeros bajo esquemas sostenibles.
-              </p>
+              </AnimatedText>
               <ul class="space-y-2">
                 <li
-                  class="flex items-start gap-3 text-sm text-slate-700 font-light"
+                  class="flex items-start gap-3 text-sm text-slate-700 font-normal"
                 >
                   <CheckCircle
                     width="18"
@@ -492,7 +491,7 @@ import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
                   <span>Claridad contractual entre partes</span>
                 </li>
                 <li
-                  class="flex items-start gap-3 text-sm text-slate-700 font-light"
+                  class="flex items-start gap-3 text-sm text-slate-700 font-normal"
                 >
                   <CheckCircle
                     width="18"
@@ -502,7 +501,7 @@ import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
                   <span>Reducción de riesgos legales</span>
                 </li>
                 <li
-                  class="flex items-start gap-3 text-sm text-slate-700 font-light"
+                  class="flex items-start gap-3 text-sm text-slate-700 font-normal"
                 >
                   <CheckCircle
                     width="18"
@@ -513,13 +512,12 @@ import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
                 </li>
               </ul>
             </div>
-            <div class="h-64 lg:h-full">
-              <img
-                src={AgroexportBusiness.src}
-                alt="Negocios Agroexportadores"
-                class="w-full h-full object-cover"
-              />
-            </div>
+            <AnimatedImage
+              src={AgroexportBusiness.src}
+              alt="Negocios Agroexportadores"
+              class="h-64 lg:h-full"
+              imageClass="object-cover"
+            />
           </div>
         </div>
       </div>
@@ -534,11 +532,12 @@ import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
           class="text-red-700 font-semibold tracking-widest text-xs uppercase mb-2 block"
           >Confianza Empresarial</span
         >
-        <h2
+        <AnimatedText
+          as="h2"
           class="text-2xl md:text-3xl text-slate-900 font-semibold tracking-tight"
         >
           Nuestros Clientes
-        </h2>
+        </AnimatedText>
       </div>
 
       <div
@@ -706,13 +705,14 @@ import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
         stroke-width="1.5"
         class="text-red-500 mb-6 opacity-80"
       />
-      <h2
-        class="text-2xl md:text-4xl font-serif font-light leading-relaxed tracking-tight italic"
+      <AnimatedText
+        as="h2"
+        class="text-2xl md:text-4xl font-serif font-normal leading-relaxed tracking-tight italic"
       >
         "Integramos derecho, estrategia y gestión de riesgos para que empresas e
         inversionistas tomen decisiones sólidas, ejecuten proyectos con
         previsibilidad y protejan su valor en el tiempo."
-      </h2>
+      </AnimatedText>
       <div class="w-full flex justify-end mt-6">
         <Quote width="32" stroke-width="1.5" class="text-red-500 opacity-80" />
       </div>
@@ -733,7 +733,7 @@ import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
           >
             Inicie la conversación
           </h2>
-          <p class="text-slate-600 font-light mb-10 max-w-md">
+          <p class="text-slate-600 font-normal mb-10 max-w-md">
             Complete el formulario y uno de nuestros socios se pondrá en
             contacto con usted a la brevedad para discutir sus necesidades
             legales.
@@ -754,7 +754,7 @@ import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
                 <p class="text-sm font-semibold text-slate-900">
                   Oficina Principal
                 </p>
-                <p class="text-sm text-slate-500 font-light">
+                <p class="text-sm text-slate-500 font-normal">
                   San Isidro, Lima - Perú
                 </p>
               </div>
@@ -771,7 +771,7 @@ import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
               </div>
               <div>
                 <p class="text-sm font-semibold text-slate-900">Teléfono</p>
-                <p class="text-sm text-slate-500 font-light">+51 1 234 5678</p>
+                <p class="text-sm text-slate-500 font-normal">+51 1 234 5678</p>
               </div>
             </div>
             <div class="flex items-center gap-4 group">
@@ -786,7 +786,7 @@ import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
               </div>
               <div>
                 <p class="text-sm font-semibold text-slate-900">Email</p>
-                <p class="text-sm text-slate-500 font-light">
+                <p class="text-sm text-slate-500 font-normal">
                   contacto@retorna.com
                 </p>
               </div>
@@ -898,7 +898,7 @@ import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
       </div>
 
       <div
-        class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-slate-800 text-xs text-slate-500 font-light"
+        class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-slate-800 text-xs text-slate-500 font-normal"
       >
         <p>
           © 2023 Retorna Inversiones Público-Privadas. Todos los derechos

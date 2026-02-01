@@ -1,0 +1,494 @@
+---
+import { Eye, Flag, Hammer, ShieldAlert, SquareStack } from "@lucide/astro";
+import Layout from "../layouts/Layout.astro";
+import JuanJoseVeneroCayo from "../assets/socios/segundo-socio.jpeg";
+import JavierGalloCabrera from "../assets/socios/primer-socio.jpeg";
+import TeamCollaboration from "../assets/servicios/team-collaboration.jpg";
+---
+
+<Layout>
+  <main>
+    <section
+      class="relative w-full pt-32 pb-20 md:pt-40 md:pb-28 flex items-center justify-start overflow-hidden"
+    >
+      <div class="absolute inset-0 z-0">
+        <img
+          src={TeamCollaboration.src}
+          alt="Equipo de trabajo colaborativo"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 hero-overlay"></div>
+      </div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full pt-20">
+        <div class="max-w-4xl">
+          <span
+            class="text-red-400 font-medium tracking-widest text-xs uppercase mb-4 block"
+            >¿Quiénes Somos?</span
+          >
+          <h1
+            class="text-4xl md:text-6xl lg:text-7xl text-white font-medium leading-[1.1] tracking-tight mb-8"
+          >
+            ¿Quiénes somos? <span
+              class="text-transparent bg-clip-text bg-linear-to-r from-red-400 to-red-600 italic font-serif"
+              >RETORNA</span
+            > Inversiones Público-Privadas.
+          </h1>
+          <p
+            class="text-lg md:text-xl text-slate-300 font-normal max-w-2xl leading-relaxed"
+          >
+            RETORNA Inversiones Público-Privadas es una firma de asesoría legal
+            y estratégica especializada en la estructuración, ejecución y
+            defensa jurídica de proyectos de inversión pública y privada, que
+            acompaña a empresas que operan en entornos altamente regulados y de
+            elevada complejidad técnica. "Acompañamos decisiones de inversión y
+            negocios complejos con asesoría legal estratégica, integrando
+            criterio jurídico, visión de negocio y control de riesgos en cada
+            etapa del proyecto".
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 md:py-32 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+          <div class="lg:col-span-4">
+            <div class="sticky top-32">
+              <h2
+                class="text-3xl md:text-4xl text-slate-900 font-medium tracking-tight mb-6"
+              >
+                Nuestra Esencia y Propósito
+              </h2>
+              <div class="w-12 h-0.5 bg-red-700 mb-6"></div>
+              <p
+                class="text-sm text-slate-500 font-normal italic leading-relaxed"
+              >
+                “Trabajamos junto a empresas e inversionistas que operan en
+                entornos complejos, aportando estrategia legal, claridad
+                regulatoria y acompañamiento permanente para ejecutar proyectos
+                con confianza”.
+              </p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-8 space-y-8">
+            <p class="text-lg text-slate-800 font-normal leading-relaxed">
+              <span class="font-medium text-slate-900">RETORNA</span> nace para atender
+              a organizaciones que demandan algo más que asesoría legal tradicional:
+              requieren criterio estratégico, acompañamiento permanente y respaldo
+              técnico en decisiones que impactan directamente en la viabilidad, rentabilidad
+              y sostenibilidad de sus proyectos. Por ello, actuamos como un aliado
+              legal de largo plazo, integrado a la dinámica del negocio del cliente,
+              con una visión práctica orientada a anticipar riesgos, estructurar soluciones
+              viables y proteger posiciones estratégicas.
+            </p>
+            <p class="text-base text-slate-600 font-normal leading-relaxed">
+              Nuestra práctica integra de forma coherente derecho, estrategia,
+              gestión de riesgos, contratación pública, arbitraje y
+              estructuración de negocios, permitiendo a nuestros clientes tomar
+              decisiones informadas, seguras y alineadas con sus objetivos
+              económicos y operativos. “Somos una firma legal orientada a la
+              inversión y al negocio, que transforma la complejidad normativa en
+              decisiones claras, proyectos viables y relaciones sostenibles”.
+            </p>
+            <p class="text-base text-slate-600 font-normal leading-relaxed">
+              El propósito de RETORNA Inversiones Público-Privadas es
+              transformar el marco legal en una ventaja competitiva, permitiendo
+              que las empresas tomen decisiones con seguridad jurídica y
+              claridad estratégica, reduzcan contingencias administrativas,
+              contractuales y arbitrales, y ejecuten proyectos y operaciones con
+              previsibilidad, orden y sostenibilidad. Nuestra actuación parte de
+              la convicción de que el derecho, cuando se gestiona con criterio y
+              visión de negocio, no frena la inversión: la habilita y la
+              protege.
+            </p>
+
+            <div
+              class="grid grid-cols-2 md:grid-cols-3 gap-6 pt-8 border-t border-slate-100 mt-8"
+            >
+              <div>
+                <span
+                  class="block text-3xl font-serif text-slate-900 font-medium mb-1"
+                  >+15</span
+                >
+                <span class="text-xs text-slate-500 uppercase tracking-wide"
+                  >Años de Experiencia</span
+                >
+              </div>
+              <div>
+                <span
+                  class="block text-3xl font-serif text-slate-900 font-medium mb-1"
+                  >100%</span
+                >
+                <span class="text-xs text-slate-500 uppercase tracking-wide"
+                  >Especialización</span
+                >
+              </div>
+              <div>
+                <span
+                  class="block text-3xl font-serif text-slate-900 font-medium mb-1"
+                  >Nacional</span
+                >
+                <span class="text-xs text-slate-500 uppercase tracking-wide"
+                  >Alcance</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-slate-900 text-white relative overflow-hidden">
+      <div
+        class="absolute top-0 right-0 w-1/2 h-full bg-slate-800/20 skew-x-12 transform origin-top-right"
+      >
+      </div>
+
+      <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24">
+          <div class="group">
+            <div class="flex items-center gap-4 mb-6">
+              <div
+                class="p-3 bg-slate-800 rounded-sm text-red-500 group-hover:text-red-400 transition-colors"
+              >
+                <Flag />
+              </div>
+              <h3 class="text-2xl font-serif font-medium tracking-tight">
+                Nuestro Propósito
+              </h3>
+            </div>
+            <p
+              class="text-slate-300 font-normal leading-relaxed border-l border-slate-700 pl-6 group-hover:border-red-500 transition-colors duration-500"
+            >
+              Transformar el marco legal en una ventaja competitiva que permita
+              a las empresas tomar decisiones con seguridad jurídica y claridad
+              estratégica, reducir contingencias administrativas, contractuales
+              y arbitrales, y ejecutar proyectos y operaciones con
+              previsibilidad, orden y sostenibilidad.
+            </p>
+          </div>
+
+          <div class="group">
+            <div class="flex items-center gap-4 mb-6">
+              <div
+                class="p-3 bg-slate-800 rounded-sm text-red-500 group-hover:text-red-400 transition-colors"
+              >
+                <Eye />
+              </div>
+              <h3 class="text-2xl font-serif font-medium tracking-tight">
+                Convicción Estratégica
+              </h3>
+            </div>
+            <p
+              class="text-slate-300 font-normal leading-relaxed border-l border-slate-700 pl-6 group-hover:border-red-500 transition-colors duration-500"
+            >
+              Nuestra actuación parte de la certeza de que el derecho, cuando se
+              gestiona con criterio y visión de negocio, habilita la inversión,
+              protege posiciones estratégicas y genera valor sostenible.
+              “Integramos derecho, estrategia y gestión de riesgos para que
+              empresas e inversionistas tomen decisiones sólidas, ejecuten
+              proyectos con previsibilidad y protejan su valor en el tiempo”.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 md:py-32 bg-slate-50 border-y border-slate-200">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="text-center mb-16">
+          <span
+            class="text-red-700 font-medium tracking-widest text-xs uppercase mb-2 block"
+            >Principios</span
+          >
+          <h2
+            class="text-3xl md:text-4xl text-slate-900 font-medium tracking-tight"
+          >
+            Principios que guían nuestra práctica
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-white p-8 border border-slate-200 hover:border-red-200 hover:shadow-lg hover:shadow-slate-200/50 transition-all duration-300 group"
+          >
+            <div
+              class="mb-6 text-slate-400 group-hover:text-red-700 transition-colors"
+            >
+              <SquareStack />
+            </div>
+            <h4 class="text-lg font-serif font-semibold text-slate-900 mb-3">
+              Especialización real en inversión pública y privada
+            </h4>
+            <p class="text-sm text-slate-600 font-normal leading-relaxed">
+              Intervenimos en proyectos, contratos y operaciones de alta
+              complejidad que requieren dominio técnico, experiencia práctica y
+              conocimiento profundo del marco regulatorio. Comprendemos la norma
+              y su aplicación efectiva en contextos reales de inversión y
+              ejecución.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-8 border border-slate-200 hover:border-red-200 hover:shadow-lg hover:shadow-slate-200/50 transition-all duration-300 group"
+          >
+            <div
+              class="mb-6 text-slate-400 group-hover:text-red-700 transition-colors"
+            >
+              <ShieldAlert />    
+            </div>
+            <h4 class="text-lg font-serif font-semibold text-slate-900 mb-3">
+              Visión estratégica del negocio, más allá de la norma
+            </h4>
+            <p class="text-sm text-slate-600 font-normal leading-relaxed">
+              Analizamos cada situación jurídica desde una perspectiva
+              económica, operativa y estratégica, alineando la asesoría legal
+              con los objetivos del negocio. El derecho es una herramienta para
+              habilitar decisiones, proteger valor y generar viabilidad.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-8 border border-slate-200 hover:border-red-200 hover:shadow-lg hover:shadow-slate-200/50 transition-all duration-300 group"
+          >
+            <div
+              class="mb-6 text-slate-400 group-hover:text-red-700 transition-colors"
+            >
+              <Hammer/>
+            </div>
+            <h4 class="text-lg font-serif font-semibold text-slate-900 mb-3">
+              Acompañamiento permanente
+            </h4>
+            <p class="text-sm text-slate-600 font-normal leading-relaxed">
+              Acompañamos a nuestros clientes desde la planificación y
+              estructuración de proyectos, pasando por la ejecución contractual,
+              hasta la defensa jurídica de sus intereses cuando es necesario. La
+              relación es de largo plazo, basada en confianza y presencia
+              constante.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="py-20 md:py-32 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="mb-20 max-w-2xl">
+          <span
+            class="text-red-700 font-medium tracking-widest text-xs uppercase mb-2 block"
+            >Nuestro Equipo</span
+          >
+          <h2
+            class="text-3xl md:text-4xl text-slate-900 font-medium tracking-tight mb-6"
+          >
+            Nuestro equipo
+          </h2>
+          <p class="text-slate-600 font-normal">
+            Nuestro equipo combina liderazgo, experiencia técnica y visión
+            estratégica para acompañar proyectos de inversión y negocios
+            complejos en entornos regulados.
+          </p>
+        </div>
+
+        <div class="grid grid-colpxap-20">
+          <div
+            class="flex flex-col md:flex-row gap-10 lg:gap-16 items-start group"
+          >
+            <div class="w-full md:w-1/3 lg:w-1/4 shrink-0">
+              <div class="aspect-3/4 bg-slate-100 overflow-hidden relative">
+                <img
+                  src={JuanJoseVeneroCayo.src}
+                  alt="Juan José Venero Cayo"
+                  class="w-full h-full object-cover transition-all duration-700"
+                />
+              </div>
+            </div>
+            <div class="w-full md:w-2/3 lg:w-3/4">
+              <h3
+                class="text-2xl md:text-3xl font-serif text-slate-900 font-medium mb-1"
+              >
+                Juan José Venero Cayo
+              </h3>
+              <p
+                class="text-xs font-semibold text-red-700 uppercase tracking-widest mb-6"
+              >
+                Gerente General | Managing Director
+              </p>
+
+              <div
+                class="prose prose-slate prose-p:font-normal prose-p:text-slate-600 max-w-none mb-8"
+              >
+                <p class="mb-4">
+                  Juan José Venero Cayo es abogado y Gerente General de RETORNA
+                  Inversiones Público-Privadas S.A.C., con formación en Derecho
+                  de la Empresa por la Pontificia Universidad Católica del Perú
+                  (PUCP). Lidera la firma con una visión estratégica orientada a
+                  la estructuración jurídica de proyectos de inversión pública y
+                  privada, contratación con el Estado y asesoría legal en
+                  entornos altamente regulados.
+                </p>
+                <p>
+                  Su perfil combina experiencia en gestión pública y práctica
+                  jurídica empresarial, lo que le permite articular soluciones
+                  legales alineadas tanto con la lógica institucional del Estado
+                  como con los objetivos del sector privado. Bajo su dirección,
+                  RETORNA se posiciona como un socio legal estratégico, enfocado
+                  en la prevención de riesgos y la toma de decisiones informadas
+                  en proyectos y operaciones complejas.
+                </p>
+              </div>
+
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 bg-slate-50 border border-slate-200 text-slate-600 text-xs rounded-full"
+                  >Gestión Pública</span
+                >
+                <span
+                  class="px-3 py-1 bg-slate-50 border border-slate-200 text-slate-600 text-xs rounded-full"
+                  >Obras por Impuestos</span
+                >
+                <span
+                  class="px-3 py-1 bg-slate-50 border border-slate-200 text-slate-600 text-xs rounded-full"
+                  >Estrategia Corporativa</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full h-px bg-slate-100"></div>
+
+          <div
+            class="flex flex-col md:flex-row gap-10 lg:gap-16 items-start group"
+          >
+            <div class="w-full md:w-1/3 lg:w-1/4 shrink-0">
+              <div class="aspect-3/4 bg-slate-100 overflow-hidden relative">
+                <img
+                  src={JavierGalloCabrera.src}
+                  alt="Javier Gallo Cabrera"
+                  class="w-full h-full object-cover transition-all duration-700"
+                />
+              </div>
+            </div>
+            <div class="w-full md:w-2/3 lg:w-3/4">
+              <h3
+                class="text-2xl md:text-3xl font-serif text-slate-900 font-medium mb-1"
+              >
+                Javier Gallo Cabrera
+              </h3>
+              <p
+                class="text-xs font-semibold text-red-700 uppercase tracking-widest mb-6"
+              >
+                Socio Director | Partner
+              </p>
+
+              <div
+                class="prose prose-slate prose-p:font-normal prose-p:text-slate-600 max-w-none mb-8"
+              >
+                <p class="mb-4">
+                  Javier Gallo Cabrera es Socio Director de RETORNA Inversiones
+                  Público-Privadas S.A.C., abogado y magíster en Derecho Civil
+                  por la Pontificia Universidad Católica del Perú (PUCP). Cuenta
+                  con una sólida trayectoria académica y profesional,
+                  desempeñándose además como docente universitario.
+                </p>
+                <p>
+                  En RETORNA, dirige la estrategia técnica de la firma,
+                  aportando rigor jurídico y criterio especializado en derecho
+                  civil, contractual y arbitraje, así como en la estructuración
+                  de contratos y la resolución de controversias complejas.
+                </p>
+              </div>
+
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 bg-slate-50 border border-slate-200 text-slate-600 text-xs rounded-full"
+                  >Arbitraje</span
+                >
+                <span
+                  class="px-3 py-1 bg-slate-50 border border-slate-200 text-slate-600 text-xs rounded-full"
+                  >Contrataciones del Estado</span
+                >
+                <span
+                  class="px-3 py-1 bg-slate-50 border border-slate-200 text-slate-600 text-xs rounded-full"
+                  >Litigios</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full h-px bg-slate-100"></div>
+
+          <div
+            class="flex flex-col md:flex-row gap-10 lg:gap-16 items-start group"
+          >
+            <div class="w-full md:w-1/3 lg:w-1/4 shrink-0">
+              <div class="aspect-3/4 bg-slate-100 overflow-hidden relative">
+                <div
+                  class="w-full h-full object-cover transition-all duration-700 bg-gray-200"
+                >
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-2/3 lg:w-3/4">
+              <h3
+                class="text-2xl md:text-3xl font-serif text-slate-900 font-medium mb-1"
+              >
+                Alejandro Kotzu Mejía Aguilar
+              </h3>
+              <p
+                class="text-xs font-semibold text-red-700 uppercase tracking-widest mb-6"
+              >
+                Coordinador Legal | Legal Coordinator
+              </p>
+
+              <div
+                class="prose prose-slate prose-p:font-normal prose-p:text-slate-600 max-w-none mb-8"
+              >
+                <p class="mb-4">
+                  Alejandro Kotzu Mejía Aguilar es abogado y Magíster en
+                  Regulación de los Servicios Públicos por la Pontificia
+                  Universidad Católica del Perú (PUCP). Se desempeña como
+                  Coordinador Legal de RETORNA Inversiones Público-Privadas
+                  S.A.C., cumpliendo un rol clave en la coordinación técnica y
+                  operativa de los servicios legales de la firma.
+                </p>
+                <p>
+                  Su experiencia abarca contrataciones públicas, derecho
+                  contractual, regulación y arbitraje, lo que le permite
+                  asegurar coherencia jurídica, seguimiento estratégico y
+                  eficiencia en la ejecución de proyectos y operaciones en
+                  entornos regulados. Su participación resulta fundamental para
+                  alinear la estrategia legal con los objetivos del cliente y
+                  las exigencias técnicas de proyectos de alta complejidad.
+                </p>
+              </div>
+
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 bg-slate-50 border border-slate-200 text-slate-600 text-xs rounded-full"
+                  >Derecho Corporativo</span
+                >
+                <span
+                  class="px-3 py-1 bg-slate-50 border border-slate-200 text-slate-600 text-xs rounded-full"
+                  >Agroexportación</span
+                >
+                <span
+                  class="px-3 py-1 bg-slate-50 border border-slate-200 text-slate-600 text-xs rounded-full"
+                  >Compliance</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .hero-overlay {
+    background: linear-gradient(to right, #0f1729f2, rgba(15, 23, 42, 0.7));
+  }
+</style>

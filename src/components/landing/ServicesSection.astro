@@ -1,0 +1,356 @@
+---
+import AnimatedText from "../AnimatedText.astro";
+import AnimatedImage from "../AnimatedImage.astro";
+import { CheckCircle } from "@lucide/astro";
+import LegalAdvisory from "../../assets/servicios/legal-advisory.jpg";
+import PublicProcurement from "../../assets/servicios/public-procurement.jpg";
+import InvestmentStructuring from "../../assets/servicios/investment-structuring.jpg";
+import DisputeResolution from "../../assets/servicios/dispute-resolution.jpg";
+import AgroexportBusiness from "../../assets/servicios/agroexport-business.webp";
+---
+
+<section
+  id="services"
+  class="py-20 md:py-32 bg-slate-50 border-t border-slate-200"
+>
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="mb-16">
+      <span
+        class="text-red-700 font-semibold tracking-widest text-xs uppercase mb-2 block"
+        >Áreas de Práctica</span
+      >
+      <AnimatedText
+        as="h2"
+        class="text-3xl md:text-4xl text-slate-900 font-semibold tracking-tight mb-6"
+      >
+        Nuestros Servicios
+      </AnimatedText>
+      <p class="text-slate-600 font-normal max-w-2xl">
+        Soluciones legales integrales diseñadas para dar soporte,
+        seguridad y viabilidad a operaciones comerciales y proyectos
+        de inversión.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 gap-12">
+      <div
+        class="group bg-white border border-slate-200 hover:border-red-200 transition-colors duration-300 overflow-hidden"
+      >
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+          <div
+            class="p-8 md:px-12 md:py-2 flex flex-col justify-center"
+          >
+            <AnimatedText
+              as="h3"
+              class="text-2xl md:text-3xl font-serif text-slate-900 mb-4 leading-tight"
+            >
+              Asesoría Legal Estratégica y Representación
+              Corporativa
+            </AnimatedText>
+            <AnimatedText
+              as="p"
+              class="text-slate-600 font-normal leading-relaxed mb-6"
+            >
+              Acompañamiento legal continuo para empresas.
+              Actuamos como equipo legal externo integrado al
+              negocio, participando en decisiones comerciales
+              y corporativas con visión preventiva.
+            </AnimatedText>
+            <ul class="space-y-2">
+              <li
+                class="flex items-start gap-3 text-sm text-slate-700 font-normal"
+              >
+                <CheckCircle
+                  width="18"
+                  stroke-width="1.5"
+                  class="text-red-700 mt-0.5 shrink-0"
+                />
+                <span
+                  >Asesoría corporativa y contractual</span
+                >
+              </li>
+              <li
+                class="flex items-start gap-3 text-sm text-slate-700 font-normal"
+              >
+                <CheckCircle
+                  width="18"
+                  stroke-width="1.5"
+                  class="text-red-700 mt-0.5 shrink-0"
+                />
+                <span>Gestión preventiva de riesgos</span>
+              </li>
+              <li
+                class="flex items-start gap-3 text-sm text-slate-700 font-normal"
+              >
+                <CheckCircle
+                  width="18"
+                  stroke-width="1.5"
+                  class="text-red-700 mt-0.5 shrink-0"
+                />
+                <span
+                  >Representación ante entidades públicas</span
+                >
+              </li>
+            </ul>
+          </div>
+          <AnimatedImage
+            src={LegalAdvisory.src}
+            alt="Asesoría Legal"
+            class="h-64 lg:h-full"
+            imageClass="object-cover"
+          />
+        </div>
+      </div>
+
+      <div
+        class="group bg-white border border-slate-200 hover:border-red-200 transition-colors duration-300 overflow-hidden"
+      >
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+          <AnimatedImage
+            src={PublicProcurement.src}
+            alt="Contrataciones Públicas"
+            class="h-64 lg:h-full order-2 lg:order-1"
+            imageClass="object-cover"
+          />
+          <div
+            class="p-8 md:p-12 flex flex-col justify-center order-1 lg:order-2"
+          >
+            <AnimatedText
+              as="h3"
+              class="text-2xl md:text-3xl font-serif text-slate-900 mb-4 leading-tight"
+            >
+              Contrataciones Públicas y Ejecución Contractual
+            </AnimatedText>
+            <AnimatedText
+              as="p"
+              class="text-slate-600 font-normal leading-relaxed mb-6"
+            >
+              Especializados en contratación pública bajo la
+              Ley N.° 32069. Acompañamos durante todo el ciclo
+              de contratación con enfoque preventivo y
+              estratégico.
+            </AnimatedText>
+            <ul class="space-y-2">
+              <li
+                class="flex items-start gap-3 text-sm text-slate-700 font-normal"
+              >
+                <CheckCircle
+                  width="18"
+                  stroke-width="1.5"
+                  class="text-red-700 mt-0.5 shrink-0"
+                />
+                <span
+                  >Participación en procedimientos de
+                  selección</span
+                >
+              </li>
+              <li
+                class="flex items-start gap-3 text-sm text-slate-700 font-normal"
+              >
+                <CheckCircle
+                  width="18"
+                  stroke-width="1.5"
+                  class="text-red-700 mt-0.5 shrink-0"
+                />
+                <span
+                  >Protección contractual durante
+                  ejecución</span
+                >
+              </li>
+              <li
+                class="flex items-start gap-3 text-sm text-slate-700 font-normal"
+              >
+                <CheckCircle
+                  width="18"
+                  stroke-width="1.5"
+                  class="text-red-700 mt-0.5 shrink-0"
+                />
+                <span
+                  >Minimización de riesgos administrativos</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="group bg-white border border-slate-200 hover:border-red-200 transition-colors duration-300 overflow-hidden"
+      >
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+          <div class="p-8 md:p-12 flex flex-col justify-center">
+            <AnimatedText
+              as="h3"
+              class="text-2xl md:text-3xl font-serif text-slate-900 mb-4 leading-tight"
+            >
+              Estructuración de Inversión Pública y Obras por
+              Impuestos
+            </AnimatedText>
+            <AnimatedText
+              as="p"
+              class="text-slate-600 font-normal leading-relaxed mb-6"
+            >
+              Asesoría en estructuración legal de proyectos de
+              inversión, con énfasis en Obras por Impuestos
+              (OxI). Acompañamos desde la concepción hasta la
+              ejecución.
+            </AnimatedText>
+            <div class="grid grid-cols-3 gap-4">
+              <div class="text-sm">
+                <span
+                  class="block text-red-800 font-semibold mb-1"
+                  >Impacto</span
+                >
+                <span
+                  class="text-slate-600 font-normal text-xs"
+                  >Inversión privada a proyectos públicos</span
+                >
+              </div>
+              <div class="text-sm">
+                <span
+                  class="block text-red-800 font-semibold mb-1"
+                  >Claridad</span
+                >
+                <span
+                  class="text-slate-600 font-normal text-xs"
+                  >Reglas previsibles</span
+                >
+              </div>
+              <div class="text-sm">
+                <span
+                  class="block text-red-800 font-semibold mb-1"
+                  >Seguridad</span
+                >
+                <span
+                  class="text-slate-600 font-normal text-xs"
+                  >Gestión de riesgos</span
+                >
+              </div>
+            </div>
+          </div>
+          <AnimatedImage
+            src={InvestmentStructuring.src}
+            alt="Estructuración de Inversión"
+            class="h-64 lg:h-full"
+            imageClass="object-cover"
+          />
+        </div>
+      </div>
+
+      <div
+        class="group bg-white border border-slate-200 hover:border-red-200 transition-colors duration-300 overflow-hidden"
+      >
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+          <AnimatedImage
+            src={DisputeResolution.src}
+            alt="Resolución de Controversias"
+            class="h-64 lg:h-full order-2 lg:order-1"
+            imageClass="object-cover"
+          />
+          <div
+            class="p-8 md:p-12 flex flex-col justify-center order-1 lg:order-2"
+          >
+            <AnimatedText
+              as="h3"
+              class="text-2xl md:text-3xl font-serif text-slate-900 mb-4 leading-tight"
+            >
+              Arbitrajes y Resolución de Controversias
+            </AnimatedText>
+            <AnimatedText
+              as="p"
+              class="text-slate-600 font-normal leading-relaxed mb-6"
+            >
+              Especialistas en resolución de controversias y
+              arbitrajes con el Estado. Abordamos cada caso
+              con visión jurídica, técnica y económica.
+            </AnimatedText>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-3 py-1 bg-slate-100 text-slate-600 text-xs rounded-full"
+                >Ampliaciones de plazo</span
+              >
+              <span
+                class="px-3 py-1 bg-slate-100 text-slate-600 text-xs rounded-full"
+                >Penalidades</span
+              >
+              <span
+                class="px-3 py-1 bg-slate-100 text-slate-600 text-xs rounded-full"
+                >Resoluciones contractuales</span
+              >
+              <span
+                class="px-3 py-1 bg-slate-100 text-slate-600 text-xs rounded-full"
+                >Valorizaciones</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="group bg-white border border-slate-200 hover:border-red-200 transition-colors duration-300 overflow-hidden"
+      >
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+          <div class="p-8 md:p-12 flex flex-col justify-center">
+            <AnimatedText
+              as="h3"
+              class="text-2xl md:text-3xl font-serif text-slate-900 mb-4 leading-tight"
+            >
+              Estructuración de Negocios Agroexportadores
+            </AnimatedText>
+            <AnimatedText
+              as="p"
+              class="text-slate-600 font-normal leading-relaxed mb-6"
+            >
+              Asesoría legal especializada en negocios de café
+              y cacao en La Convención – Cusco. Apoyamos a
+              empresas peruanas e inversionistas extranjeros
+              bajo esquemas sostenibles.
+            </AnimatedText>
+            <ul class="space-y-2">
+              <li
+                class="flex items-start gap-3 text-sm text-slate-700 font-normal"
+              >
+                <CheckCircle
+                  width="18"
+                  stroke-width="1.5"
+                  class="text-red-700 mt-0.5 shrink-0"
+                />
+                <span
+                  >Claridad contractual entre partes</span
+                >
+              </li>
+              <li
+                class="flex items-start gap-3 text-sm text-slate-700 font-normal"
+              >
+                <CheckCircle
+                  width="18"
+                  stroke-width="1.5"
+                  class="text-red-700 mt-0.5 shrink-0"
+                />
+                <span>Reducción de riesgos legales</span>
+              </li>
+              <li
+                class="flex items-start gap-3 text-sm text-slate-700 font-normal"
+              >
+                <CheckCircle
+                  width="18"
+                  stroke-width="1.5"
+                  class="text-red-700 mt-0.5 shrink-0"
+                />
+                <span
+                  >Relaciones comerciales a largo plazo</span
+                >
+              </li>
+            </ul>
+          </div>
+          <AnimatedImage
+            src={AgroexportBusiness.src}
+            alt="Negocios Agroexportadores"
+            class="h-64 lg:h-full"
+            imageClass="object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

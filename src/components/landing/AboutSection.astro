@@ -1,0 +1,73 @@
+---
+import AnimatedText from "../AnimatedText.astro";
+import { Shield, TrendingUp } from "@lucide/astro";
+---
+
+<section id="about" class="py-20 md:py-32 bg-white">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+      <div>
+        <AnimatedText
+          as="h2"
+          class="text-3xl md:text-4xl lg:text-5xl font-semibold text-slate-900 mb-8 tracking-tight leading-tight"
+        >
+          Ordenamos jurídicamente la inversión y reducimos riesgos
+          normativos.
+        </AnimatedText>
+        <div class="w-16 h-0.5 bg-red-700 mb-8"></div>
+      </div>
+      <div class="space-y-8">
+        <p
+          class="text-lg text-slate-600 font-normal leading-relaxed"
+        >
+          En <span class="font-semibold text-red-700"
+            >Retorna</span
+          >, brindamos asesoría legal especializada a empresas e
+          inversionistas en la estructuración jurídica de
+          proyectos de inversión pública y privada.
+        </p>
+        <p
+          class="text-base text-slate-600 font-normal leading-relaxed"
+        >
+          Nuestra intervención se orienta a dotar a cada proyecto
+          u operación de una estructura clara, alineada con los
+          objetivos económicos del inversionista y con las
+          exigencias del entorno institucional peruano.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6">
+          <div class="flex items-start gap-4">
+            <div class="p-2 bg-slate-50 text-red-800">
+              <Shield width="24" stroke-width="1.5" />
+            </div>
+            <div>
+              <h4
+                class="font-sans font-semibold text-slate-900 text-sm mb-1"
+              >
+                Reducción de Riesgos
+              </h4>
+              <p class="text-sm text-slate-500 font-normal">
+                Normativos y contractuales.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="p-2 bg-slate-50 text-red-800">
+              <TrendingUp width="24" stroke-width="1.5" />
+            </div>
+            <div>
+              <h4
+                class="font-sans font-semibold text-slate-900 text-sm mb-1"
+              >
+                Previsibilidad
+              </h4>
+              <p class="text-sm text-slate-500 font-normal">
+                Estructuras ejecutables.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

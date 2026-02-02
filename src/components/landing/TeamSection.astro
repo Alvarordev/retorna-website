@@ -1,0 +1,122 @@
+---
+import { MailIcon } from "@lucide/astro";
+import JuanJoseVeneroCayo from "../../assets/socios/segundo-socio.jpeg";
+import JavierGalloCabrera from "../../assets/socios/primer-socio.jpeg";
+---
+
+<section
+  id="team"
+  class="py-20 md:py-32 bg-slate-50 border-t border-slate-200"
+>
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="text-center mb-20">
+      <span
+        class="text-red-700 font-semibold tracking-widest text-xs uppercase mb-2 block"
+        >Liderazgo</span
+      >
+      <h2
+        class="text-3xl md:text-4xl text-slate-900 font-semibold tracking-tight"
+      >
+        Socios Directores
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-12">
+      <div class="group">
+        <div
+          class="aspect-3/4 overflow-hidden bg-white mb-6 relative shadow-sm"
+        >
+          <img
+            src={JuanJoseVeneroCayo.src}
+            alt="Juan Jose Venero"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute bottom-0 left-0 w-full h-1 bg-red-700 transform scale-x-100 transition-transform duration-500 origin-left"
+          >
+          </div>
+        </div>
+        <h3
+          class="text-lg font-semibold text-slate-900 font-sans tracking-tight"
+        >
+          Juan José Venero Cayo
+        </h3>
+        <p
+          class="text-xs font-semibold text-red-700 uppercase tracking-wider mt-1 mb-3"
+        >
+          Gerente General | Managing Director
+        </p>
+        <a
+          href="#"
+          class="inline-flex items-center text-slate-400 hover:text-slate-900 transition-colors"
+        >
+          <MailIcon width="18" stroke-width="1.5" />
+          <span class="sr-only">Email</span>
+        </a>
+      </div>
+
+      <div class="group">
+        <div
+          class="aspect-3/4 overflow-hidden bg-white mb-6 relative shadow-sm"
+        >
+          <img
+            src={JavierGalloCabrera.src}
+            alt="javier gallo cabrera"
+            class="w-full h-full object-cover bg-gray-200"
+          />
+          <div
+            class="absolute bottom-0 left-0 w-full h-1 bg-red-700 transform scale-x-100 transition-transform duration-500 origin-left"
+          >
+          </div>
+        </div>
+        <h3
+          class="text-lg font-semibold text-slate-900 font-sans tracking-tight"
+        >
+          Javier Gallo Cabrera
+        </h3>
+        <p
+          class="text-xs font-semibold text-red-700 uppercase tracking-wider mt-1 mb-3"
+        >
+          Socio Director | Partner
+        </p>
+        <a
+          href="#"
+          class="inline-flex items-center text-slate-400 hover:text-slate-900 transition-colors"
+        >
+          <MailIcon width="18" stroke-width="1.5" />
+          <span class="sr-only">Email</span>
+        </a>
+      </div>
+
+      <div class="group">
+        <div
+          class="aspect-3/4 overflow-hidden bg-white mb-6 relative shadow-sm"
+        >
+          <div class="w-full h-full object-cover bg-gray-200">
+          </div>
+          <div
+            class="absolute bottom-0 left-0 w-full h-1 bg-red-700 transform scale-x-100 transition-transform duration-500 origin-left"
+          >
+          </div>
+        </div>
+        <h3
+          class="text-lg font-semibold text-slate-900 font-sans tracking-tight"
+        >
+          Alejandro Kotzu Mejía Aguilar
+        </h3>
+        <p
+          class="text-xs font-semibold text-red-700 uppercase tracking-wider mt-1 mb-3"
+        >
+          Coordinador Legal | Legal Coordinator
+        </p>
+        <a
+          href="#"
+          class="inline-flex items-center text-slate-400 hover:text-slate-900 transition-colors"
+        >
+          <MailIcon width="18" stroke-width="1.5" />
+          <span class="sr-only">Email</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

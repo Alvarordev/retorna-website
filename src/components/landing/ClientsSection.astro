@@ -1,0 +1,65 @@
+---
+import Mech from "../../assets/mech_30anos-n2.png";
+import Cora from "../../assets/logo_color.png";
+import Tunkimayu from "../../assets/tunkimayo.png";
+import AnimatedText from "../AnimatedText.astro";
+---
+
+<section id="clients" class="py-20 bg-white border-t border-slate-100">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="text-center mb-16">
+      <span
+        class="text-red-700 font-semibold tracking-widest text-xs uppercase mb-2 block"
+        >Confianza Empresarial</span
+      >
+      <AnimatedText
+        as="h2"
+        class="text-2xl md:text-3xl text-slate-900 font-semibold tracking-tight"
+      >
+        Nuestros Clientes
+      </AnimatedText>
+    </div>
+
+    <div
+      class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center justify-items-center"
+    >
+      <div class="group text-center w-full">
+        <div
+          class="h-32 flex items-center justify-center p-6 transition-all duration-300"
+        >
+          <div class="bg-slate-800 px-5 py-2">
+            <img
+              src={Mech.src}
+              alt="Mech"
+              class="h-20 object-contain"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="group text-center w-full">
+        <div
+          class="h-32 flex items-center justify-center p-6 transition-all duration-300 bg-white"
+        >
+          <img
+            src={Cora.src}
+            alt="Cora"
+            class="h-26 object-contain"
+          />
+        </div>
+      </div>
+
+      <div class="group text-center w-full">
+        <div
+          class="h-32 flex items-center justify-center p-6 transition-all duration-300 bg-white"
+        >
+          <img
+            src={Tunkimayu.src}
+            alt="Tunkimayu"
+            class="h-26 object-contain"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

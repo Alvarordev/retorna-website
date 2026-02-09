@@ -2,17 +2,59 @@
 import '../styles/global.css';
 import Header from '../components/common/Header.astro';
 import Footer from '../components/common/Footer.astro';
+
+interface Props {
+	title?: string;
+	description?: string;
+	keywords?: string;
+	image?: string;
+	canonical?: string;
+}
+
+const {
+	title = 'Retorna - Estudio Jurídico Especializado',
+	description = 'Estudio jurídico especializado en derecho civil, comercial y laboral. Brindamos asesoría legal integral con un equipo de profesionales comprometidos con la excelencia.',
+	keywords = 'estudio jurídico, abogados, derecho civil, derecho comercial, derecho laboral, asesoría legal, servicios legales, abogados chile',
+	image = '/og-image.jpg',
+	canonical = Astro.url.pathname
+} = Astro.props;
+
+const canonicalURL = new URL(canonical, Astro.site);
+const socialImage = new URL(image, Astro.site);
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		
+		<!-- SEO Meta Tags -->
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta name="keywords" content={keywords} />
+		<link rel="canonical" href={canonicalURL} />
+		<meta name="robots" content="index, follow" />
+		<meta name="author" content="Retorna Estudio Jurídico" />
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={canonicalURL} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={socialImage} />
+		<meta property="og:locale" content="es_CL" />
+		<meta property="og:site_name" content="Retorna" />
+		
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:url" content={canonicalURL} />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={socialImage} />
 	</head>
 	<body>
 		<Header />

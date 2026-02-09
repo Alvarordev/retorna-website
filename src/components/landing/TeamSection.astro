@@ -21,7 +21,7 @@ import JavierGalloCabrera from "../../assets/socios/primer-socio.jpeg";
       </h2>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12 max-w-4xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-12 max-w-4xl mx-auto">
       <div class="group">
         <div
           class="aspect-3/4 overflow-hidden bg-white mb-6 relative shadow-sm"
@@ -59,11 +59,8 @@ import JavierGalloCabrera from "../../assets/socios/primer-socio.jpeg";
         <div
           class="aspect-3/4 overflow-hidden bg-white mb-6 relative shadow-sm"
         >
-          <img
-            src={JavierGalloCabrera.src}
-            alt="javier gallo cabrera"
-            class="w-full h-full object-cover bg-gray-200"
-          />
+          <div class="w-full h-full object-cover bg-gray-200">
+          </div>
           <div
             class="absolute bottom-0 left-0 w-full h-1 bg-red-700 transform scale-x-100 transition-transform duration-500 origin-left"
           >
@@ -88,12 +85,16 @@ import JavierGalloCabrera from "../../assets/socios/primer-socio.jpeg";
         </a>
       </div>
 
-      <!-- <div class="group">
+      <div class="group">
         <div
           class="aspect-3/4 overflow-hidden bg-white mb-6 relative shadow-sm"
         >
-          <div class="w-full h-full object-cover bg-gray-200">
-          </div>
+          
+           <img
+            src={JavierGalloCabrera.src}
+            alt="javier gallo cabrera"
+            class="w-full h-full object-cover bg-gray-200"
+          />
           <div
             class="absolute bottom-0 left-0 w-full h-1 bg-red-700 transform scale-x-100 transition-transform duration-500 origin-left"
           >
@@ -116,7 +117,7 @@ import JavierGalloCabrera from "../../assets/socios/primer-socio.jpeg";
           <MailIcon width="18" stroke-width="1.5" />
           <span class="sr-only">Email</span>
         </a>
-      </div> -->
+      </div>
     </div>
   </div>
 </section>

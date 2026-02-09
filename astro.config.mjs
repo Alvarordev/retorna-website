@@ -6,7 +6,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://retorna.com',
+  site: 'https://retorna.pe',
   integrations: [sitemap()],
   vite: {
     plugins: [tailwindcss()]
